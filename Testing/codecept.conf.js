@@ -5,7 +5,7 @@ exports.config = {
     WebDriver: {
       url: 'http://localhost',
       browser: 'chrome'
-    }
+    },
   },
   include: {
     I: './steps_file.js'
@@ -15,10 +15,10 @@ exports.config = {
   name: 'Testing',
 
   gherkin: {
-    features: "./feature/register.feature",
+    features: "./register/feature/registerFeature.feature",
 
     steps: [
-      "./step/registerStep.js"
+      "./register/step/registerStep.js",
     ],
   },
   plugins: {
@@ -32,9 +32,12 @@ exports.config = {
     screenshotOnFail: {
       enabled: true
     },
+    allure: {
+      enabled: true,
+    },
     wdio: {
       enabled : true,
       services: ["selenium-standalone"],
     },
   },
-}
+};
