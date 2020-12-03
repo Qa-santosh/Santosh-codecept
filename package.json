@@ -1,0 +1,21 @@
+{
+  "name": "codeCeptjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^6.9.0",
+    "codeceptjs": "^3.0.2"
+  },
+  "dependencies": {
+    "faker": "^5.1.0",
+    "selenium-standalone": "^6.20.1",
+    "webdriverio": "^6.9.0"
+  }
+}
